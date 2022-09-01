@@ -1,0 +1,32 @@
+@import url(_variaveis.css);
+
+/* .itens{
+    display: flex;
+    justify-content: space-around;
+    /* padding-left: 30rem;
+    padding-right: 30rem;
+    padding-top: 2rem; 
+    padding: 2rem 16rem 2rem;
+    flex-wrap: wrap;
+} */
+
+
+.itens img{
+    border: 1px solid red;
+}
+
+.itens img:hover{
+    transform: scale(1.02);
+}
+
+.item-descricao{
+    align-self: center;
+}
+
+.item{
+    text-align: center;
+    width: 250px;
+    height: 270px;
+    border: 1px solid blue;
+    margin: 1px 1px 20px 1px;
+}

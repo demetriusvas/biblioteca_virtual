@@ -1,0 +1,11 @@
+@import url(_variaveis.css);
+
+.article {
+    display: flex;
+    -webkit-flex: 6;
+    -ms-flex: 6;
+    flex: 6;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
