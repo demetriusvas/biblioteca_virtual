@@ -1,7 +1,8 @@
 .sidebar {
     margin-right: 0.5rem;
-    padding: 5px 40px 0px 10px;
+    padding: 5px 10px 10px 10px;
     background-color: rgb(224, 224, 224);
+    min-width: 250px;
 }
 
 .sidebar h3{
@@ -25,9 +26,12 @@
     color: var(--preto);
 }
 
-.sidebar a:hover {
-    text-decoration: underline;
+.sidebar a:hover,
+.active {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
 }
+
 
 @media (max-width: 768px) {
     .sidebar {

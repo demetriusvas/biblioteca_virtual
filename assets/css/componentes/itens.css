@@ -10,10 +10,15 @@
     margin: 1px auto 25px auto;
 }
 
-.item:hover{
-    
+.item:hover{    
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.1);
+}
+
+.item-titulo{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .item p {
