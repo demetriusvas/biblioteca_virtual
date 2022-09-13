@@ -1,32 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/base/base.css">
-  <link rel="stylesheet" href="assets/css/componentes/header.css">
-  <link rel="stylesheet" href="assets/css/componentes/nav.css">
-  <link rel="stylesheet" href="assets/css/componentes/article.css">
-  <link rel="stylesheet" href="assets/css/componentes/items.css">
-  <link rel="stylesheet" href="assets/css/componentes/footer.css">
+
   <link rel="shortcut icon" href="assets/img/home_48.ico" type="image/x-icon">
-  <script src="https://kit.fontawesome.com/d4a7a9c52e.js" crossorigin="anonymous"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+    integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
   <title>Biblioteca Virtual</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="assets/css/base.css">
 </head>
 
 <body>
-  <header class="header">
-    <h1>Biblioteca Virtual</h1>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Biblioteca Virtual</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Categorias
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Autoajuda</a></li>
+                <li><a class="dropdown-item" href="#">Biografias</a></li>
+                <li><a class="dropdown-item" href="#">Ciências Sociais</a></li>
+                <li><a class="dropdown-item" href="#">Ficção Cientítica</a></li>
+                <li><a class="dropdown-item" href="#">História</a></li>
+                <li><a class="dropdown-item" href="#">Política e Filosofia</a></li>
+                <li><a class="dropdown-item" href="#">Religião e Espiritualidade</a></li>
+                <li><a class="dropdown-item" href="#">Romance</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Pesquise" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
   </header>
 
-  <section>
-    <nav class="nav">
-      <h2>Categorias</h2>
+  <main class="container d-flex">
+    <nav class="sidebar">
+      <h3>Categorias</h3>
       <ul>
         <li><a href="#">Autoajuda</a></li>
         <li><a href="#">Biografias</a></li>
@@ -39,9 +76,9 @@
       </ul>
     </nav>
 
-    <article class="article itens">
+    <article class="article itens d-flex flex-wrap mt-2">
 
-      <div class="item item-descricao">
+      <div class="item">
         <a href="http://www.google.com">
           <img src="assets/img/img-157x226/Capas menores (1).jpg" alt="">
           <p>Holocausto Brasileiro</p>
@@ -49,7 +86,7 @@
         </a>
       </div>
 
-      <div class="item item-descricao">
+      <div class="item">
         <a href="http://www.google.com">
           <img src="assets/img/img-157x226/Capas menores (2).jpg" alt="">
           <p>Holocausto Brasileiro</p>
@@ -57,7 +94,7 @@
         </a>
       </div>
 
-      <div class="item item-descricao">
+      <div class="item">
         <a href="http://www.google.com">
           <img src="assets/img/img-157x226/Capas menores (3).jpg" alt="">
           <p>Holocausto Brasileiro</p>
@@ -65,7 +102,7 @@
         </a>
       </div>
 
-      <div class="item item-descricao">
+      <div class="item">
         <a href="http://www.google.com">
           <img src="assets/img/img-157x226/Capas menores (4).jpg" alt="">
           <p>Holocausto Brasileiro</p>
@@ -73,7 +110,7 @@
         </a>
       </div>
 
-      <div class="item item-descricao">
+      <div class="item">
         <a href="http://www.google.com">
           <img src="assets/img/img-157x226/Capas menores (5).jpg" alt="">
           <p>Holocausto Brasileiro</p>
@@ -81,7 +118,7 @@
         </a>
       </div>
 
-      <div class="item item-descricao">
+      <div class="item">
         <a href="http://www.google.com">
           <img src="assets/img/img-157x226/Capas menores (6).jpg" alt="">
           <p>Holocausto Brasileiro</p>
@@ -89,7 +126,7 @@
         </a>
       </div>
 
-      <div class="item item-descricao">
+      <div class="item">
         <a href="http://www.google.com">
           <img src="assets/img/img-157x226/Capas menores (7).jpg" alt="">
           <p>Holocausto Brasileiro</p>
@@ -97,7 +134,7 @@
         </a>
       </div>
 
-      <div class="item item-descricao">
+      <div class="item">
         <a href="http://www.google.com">
           <img src="assets/img/img-157x226/Capas menores (8).jpg" alt="">
           <p>Holocausto Brasileiro</p>
@@ -105,7 +142,7 @@
         </a>
       </div>
 
-      <div class="item item-descricao">
+      <div class="item">
         <a href="http://www.google.com">
           <img src="assets/img/img-157x226/Capas menores (9).jpg" alt="">
           <p>Holocausto Brasileiro</p>
@@ -113,7 +150,7 @@
         </a>
       </div>
 
-      <div class="item item-descricao">
+      <div class="item">
         <a href="http://www.google.com">
           <img src="assets/img/img-157x226/Capas menores (10).jpg" alt="">
           <p>Holocausto Brasileiro</p>
@@ -122,17 +159,17 @@
       </div>
 
     </article>
-  </section>
+  </main>
 
-  <footer class="footer">
-    <div>
-      <a href="https://github.com/demetriusvas" target="_blank">
-        <i class="fab fa-github fa-lg"></i>
-        <small>Desenvolvido por: Demetrius Vignati</small>
-      </a>
+  <footer class="footer bg-secondary">
+    <div class="container p-2 text-center text-white-50 mt-2">
+      <span>&copy; 2022 Demetrius Vignati</span>
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

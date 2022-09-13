@@ -1,30 +1,22 @@
-@import url(_variaveis.css);
-@import url(_reset.css);
+@import url(variaveis.css);
+@import url(componentes/sidebar.css);
+@import url(componentes/article.css);
+@import url(componentes/itens.css);
 
-* {
-  box-sizing: border-box;
+body{
+    font-family: var(--familia-corpo);
 }
 
-body {
-  font-family: var(--familia-corpo);
-  background-color: #f1f1f1;
+.conteudo-central {
+    background-color: var(--cinza);
 }
 
-/* Container for flexboxes */
-section {
-  display: -webkit-flex;
-  display: flex;
-  max-width: 1800px;
-}
 
 /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
 @media (max-width: 600px) {
-  section {
-    -webkit-flex-direction: column;
-    flex-direction: column;
-  }
+    
 }
-
+  
 /* Dispositivos extra small (telefones em modo retrato, com menos de 576px)*/
 @media (max-width: 575.98px) {
 
@@ -37,7 +29,7 @@ section {
 
 /* Dispositivos médios (tablets com 768px ou mais)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
-  
+
 }
 
 /* Dispositivos large (desktops com 992px ou mais)*/

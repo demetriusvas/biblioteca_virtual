@@ -1,0 +1,31 @@
+.itens img{
+    border: 1px solid red;
+}
+
+.itens img:hover{
+    transform: scale(1.02);
+}
+
+.item{
+    text-align: center;
+    width: 250px;
+    height: 300px;
+    border: 1px solid blue;
+    margin: 1px auto 10px auto;
+}
+
+.item p {
+    margin-top: 0.75rem;
+    line-height: 0.5rem;
+}
+
+.item a {
+    text-decoration: none;
+}
+
+.item a:hover {
+    text-decoration: underline;
+}
+
+
+
