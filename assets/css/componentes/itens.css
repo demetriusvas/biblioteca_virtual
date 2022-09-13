@@ -19,8 +19,14 @@
     line-height: 0.5rem;
 }
 
+.item a ~ p{
+    color: var(--cinza);
+    font-size: 0.9rem;
+}
+
 .item a {
     text-decoration: none;
+    color: var(--preto);
 }
 
 .item a:hover {
