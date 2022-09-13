@@ -1,0 +1,64 @@
+.livro-capa img{
+    width: 300px;
+    height: 420px;
+}
+
+.livro-titulo {
+    font-size: 1.75rem;
+}
+
+.livro-autor {
+    font-size: 1rem;
+}
+
+.livro-sinopse {
+    font-size: 1rem;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .livro-capa {
+        margin: 5px auto 10px auto;
+    }
+    
+    .livro-capa img{
+        width: 138px;
+        height: 200px;
+    }
+
+    .livro-titulo {
+        font-size: 1rem;
+    }
+
+    .livro-autor {
+        font-size: 0.8rem;
+    }
+
+    .livro-sinopse {
+        font-size: 0.8rem;
+    }
+
+    .resposividade {
+        flex-wrap: wrap;
+    }
+}
+
+/* Dispositivos médios (tablets com 768px ou mais)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .livro-capa img{
+        width: 250px;
+        height: 350px;
+    }
+
+    .livro-titulo {
+        font-size: 1.4rem;
+    }
+
+    .livro-autor {
+        font-size: 0.9rem;
+    }
+
+    .livro-sinopse {
+        font-size: 0.9rem;
+    }
+}

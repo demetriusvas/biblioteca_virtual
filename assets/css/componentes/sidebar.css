@@ -39,3 +39,9 @@
     }
 }
 
+/* Dispositivos large (desktops com 992px ou mais)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .sidebar {
+        min-width: 200px;
+    }
+}

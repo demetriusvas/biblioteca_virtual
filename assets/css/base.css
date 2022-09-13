@@ -2,6 +2,7 @@
 @import url(componentes/sidebar.css);
 @import url(componentes/article.css);
 @import url(componentes/itens.css);
+@import url(componentes/livro.css);
 
 body{
     font-family: var(--familia-corpo);
